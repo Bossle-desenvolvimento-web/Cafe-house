@@ -1,0 +1,142 @@
+@charset "utf-8";  /*03/01/23----*/
+
+:root{--font-title-site: 'Fredericka the Great', cursive;
+    --h1-title: 'Merriweather', serif;
+    --h2: 'Merriweather', serif;
+    --h3: 'Merriweather', serif;
+    --p:'IBM Plex Sans', sans-serif;
+    --color-one: #242424;
+    --color-two: #333333;
+    --color-three:#050505;
+    --color-four: #000000;
+    --color-five: #8C7264;
+    --color-six: #A65E44;
+    --color-seven: #BFA59B;
+    --color-eight: #D9C2BA;
+    --color-nine: #593B34;
+    --color-ten: #F2F2F2;
+    --color-bg-test:#7B94A8;
+      }
+
+@media screen and (min-width:130px) and (max-width:480px){
+
+ *{margin:0;
+   padding: 0;
+   box-sizing: border-box;}
+
+
+   body{background-color:  var(--color-three);}
+
+   main{background-color: var(--color-one);
+        width:90%;
+       height: auto;
+       margin: auto;
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       gap: 10px;
+        align-items: center;}
+
+        header, section, footer{width: 85%;
+                height: auto;
+               
+                background-color: var(--color-ten);;
+            border-radius: 10px;}
+
+    header{display: grid;
+           grid-column: auto;
+           align-items: center;
+           margin-top: 10px;
+           background-color: var(--color-four);}
+
+     
+ #msg-title{display: none;}
+
+  #logo{display: grid;
+         justify-self: center;}
+
+
+
+
+
+
+
+       /*---------------------------------------------------------------------------*/
+        
+
+        /* .coffee-combos{  display:block;
+                       background-color:var(--color-three); */
+
+        .coffee-combos{background-color: var(--color-nine);
+                       
+                        display:flexbox;
+                        flex-direction: column;
+                       padding: 25px;} 
+
+
+                        details{background-color: var(--color-five);
+                                 display: flex;
+                                 flex-direction: column;
+                                padding: 10px;
+                                border-radius: 5px;}
+                           
+           
+           
+                    details >a {background-color: var(--color-ten);
+                                width: 95;
+                                 height: 50px;
+                                border-left: solid black 3px;
+                                border-bottom: solid black 3px;
+                                border-radius: 5px;
+                                margin-bottom: 5px;}  
+
+                    a{text-align: center;
+                    font-size: 24px;
+                   color:#000000;
+                  text-decoration: none;
+                  font-weight: bolder;}   
+                  
+                  details,a:hover{color:aliceblue;
+                                   background-color: var(--color-four);}
+
+                                 
+                   summary{text-align: center;
+                           padding-bottom: 10px;
+                           font-weight: bolder;}  
+         
+
+
+      /* -----------------------mapa------------------*/
+
+      #sessao-mapa{background-color: var(--color-three);}
+
+      .mapa{width: 75%;
+        height: 200px;
+        margin: auto;
+       border-radius: 15px;
+         margin-top: 15px;
+         margin-bottom: 15px;
+        margin-left: 35px;}
+
+
+        /*-------footer--------------------------*/
+
+        footer{background-color: var(--color-four);
+               width: 90%;
+               height: 55px;
+               margin-bottom: 30px;}
+
+           #p-footer{font-size: 18px;
+                     font-weight: bolder;
+                     font-family: 'Times New Roman', Times, serif;
+                     padding-top: 20px;
+                     text-align: center;
+                    color: var(--color-ten);}
+                     
+        /*---------------------------------------------*/
+
+
+     .laptop{display: none;}   
+
+
+ }/*essa chave da mediascreen*/
